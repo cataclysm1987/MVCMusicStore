@@ -1,0 +1,19 @@
+﻿@model MVCMusicStore.Models.Album
+
+@{
+    ViewBag.Title = "Details";
+    Layout = "/Views/Shared/_Layout.cshtml";
+}
+
+<h2>Details</h2>
+
+<h3>
+    @Html.DisplayNameFor(u => u.Title)
+    @Html.DisplayFor(u => u.Title)
+    @Html.DisplayNameFor(u => u.Artist)
+    @Html.DisplayFor(u => u.Artist)
+    @Html.DisplayNameFor(u => u.Genre)
+    @Html.DisplayFor(u => u.Genre)
+    @Html.DisplayNameFor(u => u.AlbumArtUrl)
+    @Html.DisplayFor(u => u.AlbumArtUrl)
+</h3>

@@ -1,0 +1,20 @@
+﻿@model IEnumerable<MVCMusicStore.Models.Album>
+
+@{
+    ViewBag.Title = "title";
+    Layout = "/Views/Shared/_Layout.cshtml";
+}
+
+<h2>Albums</h2>
+
+@foreach (var album in Model)
+{
+    <h1>@Html.DisplayNameFor(u => u.Title)</h1>
+    <p>@Html.DisplayFor(u => album.Title)</p>
+    <h3>@Html.DisplayNameFor(u => u.Artist)</h3>
+    <p>@Html.DisplayFor(u => album.Artist)</p>
+    <h3>@Html.DisplayNameFor(u=>u.Genre)</h3>
+    <p>@Html.DisplayFor(u => album.Genre)</p>
+    <h3>@Html.DisplayNameFor(u => u.AlbumArtUrl)</h3>
+    <p>@Html.DisplayFor(u => album.AlbumArtUrl)</p>
+}
